@@ -28,3 +28,24 @@ console.log(user1.name)
 // b ="Hello";
 // console.log(b); // not allow, gives error
 
+{//block scope (but var does not follow block scope)
+    let age1=12;
+    console.log(age1)
+}
+//console.log(age1)//not defined
+
+const cat ={sound:"Meow"};//in const value can be update but can not be reassigned
+cat.sound='meoooo'//value is updated
+//cat ={} //reassign is not possible
+console.log(cat)
+
+let x=5;
+let y="5";
+console.log(x===y);//checks both value and data type
+console.log(x==y);//checks only the value 
+
+let e=Number.MAX_SAFE_INTEGER
+console.log(e)
+let r=654684651654184658465n;
+r= r+2n;
+console.log(r)
